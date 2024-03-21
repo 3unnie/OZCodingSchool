@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko"> 
+    <head>
+        <meta charset="utf-8">
+        <title>값 전송(form)</title>
+    </head>
+    <body>
+
+        <!-- id 는 웹페이지 안의 값 name 은 서버와의 값-->
+        <!-- 서버로 부터 정보를 가져오겟다 -->
+        <form method="post" action="fake.php">
+
+            <label for="name">이름</label>
+            <input type="text" id="name" name="name">
+
+            <br/>
+
+            <label for="age">나이</label>
+            <input type="text" id="age" name="age">
+
+            <br/>
+
+            <label for="mbti">MBTI</label>
+            <input type="text" id="mbti" name="mbti">
+
+            <br/>
+
+            <input type="submit">
+
+        </form>
+
+        <!-- 서버로 부터 정보를 주고 다음 행동을 요청 -->
+        <form method="get" action="fake.php">
+            
+        </form>
+    </body>
+</html>

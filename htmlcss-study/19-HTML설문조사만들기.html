@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>은지의 설문조사</title>
+</head>
+<body>
+    <header>
+        <h1>애완동물의 설문 조사</h1>
+        <p>모든 항목에 빠짐없이 입력해주세요.</p>
+    </header>
+    <br/>
+    <main>
+        <form method="get" action="http://www.naver.com">
+            <fieldset>
+                <legend>개인 정보</legend>
+                <label for="name"><b>이름</b></label>
+                <input type="text" placeholder="name" id="name" name="name">
+                <br>
+                <label for="email"><b>이메일</b></label>
+                <input type="email" placeholder="email" id="email" name="email">
+            </fieldset>
+            <fieldset>
+                <legend>애완 동물</legend>
+
+                <label for="pet_name"><b>이름</b></label>
+                <input type="text" placeholder="pet name" id="pet_name" name="pet_name">
+
+                <p><b>종류</b></p>
+                <input type="radio" id="dog" name="pet_type">
+                <label for="dog">강아지</label>
+                <input type="radio" id="cat" name="pet_type">
+                <label for="cat">고양이</label>
+                <input type="radio" id="fish" name="pet_type">
+                <label for="fish">물고기</label>
+                <input type="radio" id="etc" name="pet_type">
+                <label for="etc">그 외</label>
+                <br>
+                <br>
+                <label for="pet_age"><b>나이</b></label>
+                <input type="number" id="pet_age" name="pet_age" max="15">
+
+                <p>사료를 고를 때 중요시하는 요소는?<small>(복수 선택 가능)</small></p>
+
+                <input type="checkbox" id="pet_hist" name="pet_food">
+                <label for="pet_hist">유래</label>
+                <input type="checkbox" id="pet_health" name="pet_food">
+                <label for="pet_hist">성분영양물</label>
+                <input type="checkbox" id="pet_amount" name="pet_food">
+                <label for="pet_amount">양</label>
+                <input type="checkbox" id="pet_price" name="pet_food">
+                <label for="pet_price">가격</label>
+
+            </fieldset>
+            <fieldset>
+                <legend>기타 의견</legend>
+                <textarea rows="3" cols="30" placeholder="문의 및 요청사항등을 적어주세요."></textarea>
+            </fieldset>
+            <input type="submit">
+        </form>
+    </main>
+    <br/>
+    <footer>
+        <p>감사합니다.</p>
+    </footer>
+
+</body>
+</html>
