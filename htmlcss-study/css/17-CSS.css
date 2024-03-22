@@ -1,0 +1,82 @@
+/*전체 셋팅*/
+*{
+    box-sizing: border-box;
+    font-family: "Orbit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  
+}
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    margin: 0;
+}
+.container{
+    height: 100%;
+    background-color: #121212;
+}
+
+/*스크린 크기 조정*/
+.chat-screen{
+    height: calc(100% - 150px);
+}
+
+/*section 유저 정보 표시 부분*/
+.user{
+    background-color: white;
+    padding: 20px;
+    height: 100px;
+}
+.user-box{
+    float: left;
+}
+.user-pic{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 10px;
+    background-color: #121212;
+}
+.user-nic, .user-count{
+    margin: 5px;
+}
+.user-count{
+    font-size: 12px;
+    color: grey;
+}
+
+/*채팅 입력창*/
+.chat-form{
+    height: 150px;
+    background-color: white;
+}
+.chat-form-field{
+    height: 150px;
+}
+.chat-form-msg{
+    width: calc(100% - 120px);
+    height: 150px;
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    resize: none;
+    float:left;
+}
+.chat-form-btn{
+    width: 120px;
+    height: 150px;
+    border-radius: 10px;
+    background-color: #121212;
+    font-size: 18px;
+    font-weight: 900;
+    color: white;
+    float: right;
+}
+.chat-form-btn:active{
+    background-color: black;
+}
+.chat-form-msg:focus{
+    outline: none;
+}
