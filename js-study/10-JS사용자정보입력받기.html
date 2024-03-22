@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+</head>
+<body>
+    <h1 id="name"></h1>
+    <p id="animal"></p>
+    <p id="fruit"></p>
+
+    <script>
+        const nameElement = document.querySelector("#name")
+        let name =prompt("이름")
+        nameElement.textContent = `${name}님의 정보`
+
+        const animalElement = document.querySelector("#animal")
+        let animal =prompt("좋아하는 동물을 입력해 주세요")
+        animalElement.textContent = `${name}님이 좋아하는 동물은 ${animal} 입니다.`
+
+        const fruitElement = document.querySelector("#fruit")
+        let fruit =prompt("좋아하는 과일을 입력해 주세요")
+        fruitElement.textContent = `${name}님이 좋아하는 과일은 ${fruit} 입니다.`
+    </script>
+</body>
+</html>
