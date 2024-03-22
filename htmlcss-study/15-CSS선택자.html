@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자</title>
+    <style>
+        /*
+         기호와 함꼐 사용하는 속성 선택자
+         * :  값의 포함 여부
+         ^ : 값의 시작 여부
+         $ : 값의 끝 여부
+        */
+        img[width $="0"]{
+            border: 10px solid pink;
+        }
+
+        body p{
+            font-size: 50px;
+        }
+
+        body p b{
+            color: purple;
+        }
+        /* p > b{}  자식 */
+        /* #mj ~ p 형제 : p 모두 */
+        /* #mj + p 형제 : 다음 p 1개 */
+
+    </style>
+</head>
+<body>
+    <img src="img/mj.jpg" width="200" alt="먼지">
+    <img src="img/mj.jpg" width="200">
+    <img src="img/mj.jpg" width="200" id="mj">
+    <p>조먼지는 너무 귀여워</p>
+    <p>조먼지는 너무 귀여워</p>
+    <p><b>조먼지</b>는 너무 귀여워</p>
+    <p>조먼지는 너무 귀여워</p>
+</body>
+</html>

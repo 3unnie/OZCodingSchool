@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문서의흐름(float)</title>
+    <style>
+        .container{
+            height: 400px;
+            border: 2px solid black;
+        }
+        #mj1{
+            float: left;
+        }
+        #mj2{
+            float: right;
+        }
+        p{
+            margin: 30px;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img id="mj1" src="img/mj.jpg" width="200">
+        <img id="mj2" src="img/mj.jpg" width="200">
+        <p>
+            Lorem Ipsum is simply dummy text of the printing and 
+            typesetting industry. Lorem Ipsum has been the industry's 
+            standard dummy text ever since the 1500s, when an unknown 
+            printer took a galley of type and scrambled it to make a 
+            type specimen book
+        </p>
+    </div>
+</body>
+</html>

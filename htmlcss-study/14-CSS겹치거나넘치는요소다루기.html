@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>겹치거나 넘치는 요소 다루기</title>
+    <style>
+        div{
+            width: 150px;
+            height: 150px;
+            position: relative;
+            color: wheat;
+        }
+        #box1{
+            background-color: red;
+            z-index: 6;
+            overflow: auto;
+            /*
+                overflow : 넘치는것도 보여줘라
+                hidden : 넘치는거는 숨김처리를해줘
+                scroll :넘치는 거는 스크롤로 보여줘라
+                auto : 알아서해
+            */
+        }
+        #box2{
+            background-color: orange;
+            bottom: 50px;
+            z-index: 5;
+        }
+        #box3{
+            background-color: yellow;
+            bottom: 100px;
+            z-index: 4;
+        }
+        #box4{
+            background-color: green;
+            bottom: 150px;
+            z-index: 3;
+        }
+        #box5{
+            background-color: blue;
+            bottom: 200px;
+            z-index: 2;
+        }
+        #box6{
+            background-color: purple;
+            bottom: 250px;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div id="box1">
+        rainbow rainbow rainbow
+        rainbow rainbow rainbow
+        rainbow rainbow rainbow
+        rainbow rainbow rainbow
+        rainbow rainbow rainbow
+        rainbow rainbow rainbow
+    </div>
+    <div id="box2">2</div>
+    <div id="box3">3</div>
+    <div id="box4">4</div>
+    <div id="box5">5</div>
+    <div id="box6">6</div>
+</body>
+</html>

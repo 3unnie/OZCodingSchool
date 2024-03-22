@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>의사 클래스 와 요소</title>
+    <style>
+        .menu{
+            padding: 20px;
+            border: 5px solid black;
+        }
+        .menu > li{
+            display: inline-block;
+            text-align: center;
+        }
+        li > a{
+            display: inline-block;
+            width: 80px;
+            padding: 10px;
+            text-decoration: none;
+            font-weight: 600;
+        } 
+        a:hover{
+            color: white;
+            background-color: grey;
+        }
+        a:active{
+            background-color: black;
+        }
+        li:nth-child(3){
+            font-size: 20px;
+        }
+
+        a::first-letter{
+            font-size: 40px;
+        }
+
+        a::after{
+            content:"♥";
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1> 조먼지!!!! 귀여워!!!! </h1>
+    <ul class="menu">
+        <li><a href="">간식</a></li>
+        <li><a href="">사료</a></li>
+        <li><a href="">토이</a></li>
+        <li><a href="">생활</a></li>
+    </ul>
+</body>
+</html>

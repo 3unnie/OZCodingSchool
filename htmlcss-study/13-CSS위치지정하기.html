@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>위치 지정하기(position)</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+        }
+        #box1{
+            background-color: red;
+            position: absolute; 
+            /* 
+            문서의 흐름에서 제외 
+            abs 요소는 position 속성을 가진 요소를 기준으로 위치를 이동한다.
+            단 상위 요소중에 없으면 화면 기준으로 이동한다. 
+            */
+        }
+        #box2{
+            background-color: yellow;
+            position: relative;
+            top: 20px;
+            left:50px;
+        }
+        #box3{ 
+            background-color: green;
+            height: 2000px;
+        }
+        #box4{ 
+            background-color: blue;
+            position: fixed;
+            right:100px;
+            bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box1"></div>
+    <div id="box2"></div>
+    <div id="box3"></div>
+    <div id="box4"></div>
+</body>
+</html>
