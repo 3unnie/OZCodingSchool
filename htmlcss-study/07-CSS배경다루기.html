@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배경</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            border: 5px dotted orangered;
+            
+            background-color: orange;
+            /*
+                default 값은 border-box
+                border-box 끝
+                padding-box padding 까지
+                content-box content 까지
+            */
+            background-clip: padding-box;
+        }
+        #mj{
+            width: 100px;
+            height: 100px;
+            border: 5px dotted orangered;
+            background-image: url(img/mj.JPEG);
+            background-size: 50px 50px;
+            /* 백그라운드 default 값은 repeat */
+            background-repeat: no-repeat;
+            /*clip과 같은 기능*/
+            background-origin: border-box;
+            background-position: center;
+            /*
+            left bottom 이런식으로 줄수도있다
+            x값과 y값 도 줄수있다 (100px 50px)
+            */
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <br/>
+    <div id="mj"></div>
+</body>
+</html>

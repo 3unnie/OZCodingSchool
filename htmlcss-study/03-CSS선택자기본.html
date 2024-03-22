@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css선택자 유형</title>
+    <style>
+        *{
+            color: red;
+        }
+        li{
+            color: blue;
+        }
+        /* class선택자는  .을 사용한다 */
+        li.pet{
+            color: orange;
+        }
+        /* id선택자는 #을 사용한다 */
+        li#cat{
+            color: pink;
+        }
+        /* 그룹 선택자 */
+        h2,p,li{
+            color: green
+        }
+</style>
+</head>
+<body>
+    <!-- 
+        선택자 우선순위: 쓰여진 순서랑 관계없이 적용되는 순위
+        1. 아이디 선택자
+        2. 클래스 선택자
+        3. 태그 선택자
+    -->
+
+    <h2>애완 동물의 종류</h2>
+
+    <p>모두 다 사랑스러운 동물입니다.</p>
+
+    <ul>
+        <li class="pet" id="dog">강아지</li> 
+        <li class="pet" id="cat">고양이</li>
+        <li class="pet" id="bird">새</li>
+        <li class="pet" id="gorani">고라니</li>
+    </ul>
+</body>
+</html>

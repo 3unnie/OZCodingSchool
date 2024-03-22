@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>여백다루기</title>
+    <style>
+        div{
+            width: 300px;
+            height: 200px;
+            border: 1px solid purple;
+
+            margin: 100px;
+            padding: 10px 20px 30px 40px;
+            /*접미사를 사용해 (padding-top 등) 개별로 값을 줄수있다.*/
+
+            /*
+                default 값은 content-box
+                content-box : 같이 사이즈가 늘어난다
+                border-box : width/height가 border사이즈를 포함한다
+            */
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

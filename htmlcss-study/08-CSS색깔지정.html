@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>색깔 지정하기</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            margin-bottom: 50px;
+        }
+        div#div1{
+            background-color: red;
+            opacity: 0.5;
+        }
+        div#div2{
+            background-color: rgb(0%, 12%, 40%);
+        }
+        div#div3{
+            background-color: rgba(100%, 0%, 30%, 0.5);
+        }
+        div#div4{
+            background-color: hsl(400, 50%, 40%);
+        }
+        p{
+            color: hsla(300, 100%, 40%, 0.6);
+            /*색조, 채도, 밝기(조도), 투명도*/
+        }
+        h2{
+            /*16진수*/
+            color: #ffff00;
+            /*ffff00(99)뒤에 두자리는 투명도*/
+        }
+    </style>
+</head>
+<body>
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <div id="div3"></div>
+    <div id="div4"></div>
+    <p>안녕안녕안녕</p>
+    <h2>색깔 놀이 중 입니다.</h2>
+</body>
+</html>
