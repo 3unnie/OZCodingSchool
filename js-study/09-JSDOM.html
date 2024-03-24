@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DocumentObjectModel</title>
+</head>
+<body>
+    <p>세상에서 가장 귀여운</p>
+    <p>나의 고양이</p>
+    <p class="comment">조먼지</p>
+    <p class="comment" id="love">사랑해</p>
+    <script>
+        //입력 처리 출력
+        let str = window.document.querySelector("p").textContent;
+        let str2 = window.document.querySelector("p")
+        console.log(str);
+        console.log(str2);
+
+        let str3 = window.document.querySelector("#love");
+        str3.textContent = "LOVE해"; //바꾼다
+    </script>
+</body>
+</html>
