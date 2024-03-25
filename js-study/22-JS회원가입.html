@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[eunnie]회원 가입</title>
+    <link href="css/22-CSS.css" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <form id="form" action="#">
+            <table>
+                <tr>
+                    <th>아이디</th>
+                    <td><input type="text" name="id" placeholder="아이디" autocomplete="off" required></td>
+                </tr>
+                <tr>
+                    <th>비밀번호</th>
+                    <td><input type="password" name="pw" placeholder="비밀번호" autocomplete="off" required></td>
+                </tr>
+                <tr>
+                    <th>비밀번호 확인</th>
+                    <td><input type="password" name="pw2" placeholder="비밀번호 확인" autocomplete="off" required></td>
+                </tr>
+                <tr>
+                    <th>이름</th>
+                    <td><input type="text" name="name" placeholder="이름" autocomplete="off" required></td>
+                </tr>
+                <tr>
+                    <th>전화번호</th>
+                    <td><input type="text" name="phone" placeholder="전화번호" autocomplete="off" required></td>
+                </tr>
+                <tr>
+                    <th>직무</th>
+                    <td>
+                        <select name="position">
+                            <option value="teacher">선생님</option>
+                            <option value="student">학생</option>
+                            <option value="developer">개발자</option>
+                            <option value="designer">웹디자이너</option>
+                            <option value="nothing" selected>미정</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>성별</th>
+                    <td>
+                        <label>
+                            <input type="radio" name="gender" value="male" checked>남
+                        </label>
+                        <label>
+                            <input type="radio" name="gender" value="female" checked>여
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <th>이메일</th>
+                    <td><input type="email" name="email" placeholder="이메일" autocomplete="off"></td>
+                </tr>
+                <tr>
+                    <th>자기소개</th>
+                    <td><textarea name="intro" placeholder="자기소개" autocomplete="off"></textarea></td>
+                </tr>
+            </table>
+            <div class="buttons">
+                <input type="submit" value="가입" class="btn" title="가입">
+                <input type="reset" value="초기화" class="btn" title="처음으로">
+            </div>
+        </form>
+    </div>
+    <script src="js/22-JS.js"></script>
+</body>
+</html>

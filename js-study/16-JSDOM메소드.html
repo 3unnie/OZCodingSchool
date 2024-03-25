@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>createElements&appendChild</title>
+</head>
+<body>
+    <div id="container"></div>
+    <script>
+        for(let i=0; i<5; i+=1){
+            const div = document.getElementById("container");
+            const h1 = document.createElement("h1");
+        
+            h1.style.color = "purple";
+            h1.textContent = "조먼지"
+
+            div.appendChild(h1);
+        }
+    </script>
+</body>
+</html>

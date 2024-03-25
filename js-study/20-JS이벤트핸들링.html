@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이벤트 핸들링</title>
+</head>
+<body>
+    <button id="cho">CHO</button>
+    <button id="mun">MUN</button>
+    <button id="ji">JI</button>
+    <hr/>
+
+    <script>
+        const choBtn = document.getElementById("cho");
+        const munBtn = document.getElementById("mun");
+        const jiBtn = document.getElementById("ji");
+
+        const handleClick = function(event){
+
+            if(event.target.id === "cho"){
+                alert("조를 선택하셨습니다.");
+                const span = document.createElement("span");
+                span.textContent = `${event.target.id}를 선택하셨습니다.`;
+                document.body.append(span);
+            }else if(event.target.id === "mun"){
+                const span = document.createElement("span");
+                span.textContent = `${event.target.id}를 선택하셨습니다.`;
+                document.body.append(span);
+            }else{
+                const span = document.createElement("span");
+                span.textContent = `${event.target.id}를 선택하셨습니다.`;
+                document.body.append(span);
+            }
+        }
+
+        // choBtn.onclick = function(){
+        //     alert("조를 선택하셨습니다.");
+        //     const spanCho = document.createElement("span");
+        //     span.textContent = "조를 선택하셧습니다";
+        //     document.body.append(span);
+        // }
+
+        // munBtn.addEventListener("click",function(){
+        //     alert("먼를 선택하셨습니다.");
+        //     const spanMun = document.createElement("span");
+        //     span.textContent = "먼를 선택하셧습니다";
+        //     document.body.append(span);
+        // });
+
+        jiBtn.addEventListener("click", handleClick);
+        munBtn.addEventListener("click", handleClick);
+        choBtn.addEventListener("click", handleClick);
+    </script>
+</body>
+</html>

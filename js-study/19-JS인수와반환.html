@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인수와 반환</title>
+</head>
+<body>
+    <div id="container"></div>
+    <script>
+        callP(saySomething(parseInt(prompt("첫번째 숫자를 입력해주세요")),parseInt(prompt("두번째 숫자를 입력해주세요"))));
+
+        //더하기 함수 (반환 값이 있다)
+        function saySomething(num1, num2){
+            let sum = num1 + num2;
+            return sum;
+        }
+        //결과를 알려주는 함수
+        function callP(comment){
+            const div = document.getElementById("container");
+            const p = document.createElement("p");
+            p.textContent = `더한 값은 ${comment}입니다.`;
+            div.appendChild(p);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메소드 및 속성</title>
+</head>
+<body>
+
+    <h1 id="song_title" class="heading" title="동방신기주문">
+        <span>MIROTIC - 동방신기</span>
+    </h1>
+    <p class="lyrics">시작은 달콤하게 평범하게 나에게 끌려</p>
+    <p class="lyrics">언제나 그랬듯이 먼저 말을 걸어와</p>
+    
+    <script>
+        //선택자의 첫번째것을 반환
+        console.log(document.querySelector(".lyrics"));
+        //선택자의 모두를 반환
+        console.log(document.querySelectorAll(".lyrics"));
+        //선택한 모든 class를 반환
+        console.log(document.getElementsByClassName("lyrics"));
+        //선택한 id를 반환
+        console.log(document.getElementById("song_title"));
+
+        let title = document.getElementById("song_title");
+
+        //코드상의 공백도 포함
+        console.log(title.textContent);
+        //공백이 없이 가져온다
+        console.log(title.innerText);
+        //해당 클래스의 이름을 보여줘
+        console.log(title.className);
+        //정의된 스타일을 보여줘
+        console.log(title.style);
+        //타이틀을 보여줘
+        console.log(title.title);
+    </script>
+</body>
+</html>

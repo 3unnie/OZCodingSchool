@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수정의 그리고 호출</title>
+</head>
+<body>
+    <div id="container"></div>
+    <script>
+
+        callP();
+        
+        function callP(){
+            const div = document.getElementById("container");
+            const p = document.createElement("p");
+
+            p.textContent = "p태그 새롭게 등장!";
+            div.appendChild(p);
+        }
+        
+        callP(); 
+
+        //함수 선언식 : 호이스팅이 가능하다
+        function sayYes(){
+            alert("yes");
+        }
+        //함수 표현식 : 호이스팅이 불가능하다
+        const sayNo = function(){
+            alert("no")
+        }
+
+        sayYes();
+        sayNo();
+    </script>
+</body>
+</html>

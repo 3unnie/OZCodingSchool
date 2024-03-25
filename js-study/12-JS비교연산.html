@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>비교연산</title>
+</head>
+<body>
+    <script>
+        let num = 20;
+        let str = "20";
+        let age = parseInt(prompt("당신의 나이는?")); //prompt는 문자열 형태로 반환
+        //window.parseInt 문자열로 받은 숫자를 인트로 반환해주는 메소드
+        console.log(typeof age);
+        console.log(num < age);
+        console.log(num == age);
+        console.log(num === age);
+        console.log(str === age);
+
+        console.log("----------------------------------");
+       
+        let name = prompt("당신의 이름은?");
+       //DOM에 HTML코드를 추가에서 반영하는 메소드
+        document.write(`사용자의 이름은 <b>${name}</b> 입니다<br/>`);
+        document.write(`우리가 찾는 사용자가 ${"eunnie" === name} 입니다`);
+    </script>
+</body>
+</html>

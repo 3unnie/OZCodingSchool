@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>몬스터 잡기</title>
+</head>
+<body>
+    <div id="container">
+    </div>
+    <script>
+         
+        const attack = parseInt(prompt("1회 공격시 데미지는 얼마인가요?(0보다 큰수를 입력해주세요)"));
+
+        //숫자를 바르게 입력해야 게임 시작
+        if(attack > 0){
+            const div = document.getElementById("container");
+
+            const title_Oak = document.createElement("h1");
+            title_Oak.style.display = "inline";
+            title_Oak.style.color = "green";
+            title_Oak.textContent = "오크 ";
+            const title_Attake = document.createElement("h2");
+            title_Attake.style.display = "inline";
+            title_Attake.textContent = "잡기 ";
+            const title_Game = document.createElement("h1");
+            title_Game.style.display = "inline";
+            title_Game.style.color = "red";
+            title_Game.textContent = "게임";
+
+            div.appendChild(title_Oak);
+            div.appendChild(title_Attake);
+            div.appendChild(title_Game);
+
+            let hp = 100;
+            let attackCount = 0;
+
+            //while문 사용
+            while(hp > 0){
+                hp -= attack;
+                attackCount += 1;
+
+                const CountNotice = document.createElement("p");
+                CountNotice.textContent = `${attackCount}회 공격했다.`;
+                div.appendChild(CountNotice);
+                //체력이 -인지 체크 
+                if(hp < 0){
+                    hp = 0;
+                }
+                const notice = document.createElement("strong");
+                notice.textContent = `오크의 남은 체력은 ${hp}입니다.`;
+                div.appendChild(notice);
+            }
+
+            const kill = document.createElement("h2");
+            kill.style.color = "red";
+            kill.textContent = "처치 성공";
+
+            div.appendChild(kill);
+        
+        }else{
+            alert("데미지를 잘못입력하여 게임을 취소합니다.");
+        }
+    </script>
+</body>
+</html>

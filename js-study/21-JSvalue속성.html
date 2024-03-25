@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VALUE 속성</title>
+</head>
+<body>
+    <form>
+        <label for="name">이름 :</label>
+        <input type="text" name="name" id="name">
+        <input type="button" id="push" value="push">
+    </form>
+
+    <form id="form">
+        <label for="nikName">닉네임 :</label>
+        <input type="text" name="nikName" id="nikName">
+        <input type="submit">
+    </form>
+
+    <br/>
+    <script>
+        const input = document.getElementById("name");
+        const button = document.getElementById("push");
+        const form = document.getElementById("form");
+        
+        input.addEventListener("keyup",function(e){
+            console.log(e.target.value);
+        })
+
+        button.addEventListener("click", function(){
+            const greet = document.createElement("h2");
+            greet.textContent = `${input.value}님 안녕하세요`;
+            document.body.appendChild(greet);
+        })
+
+        form.addEventListener("submit", function(event){
+            event.preventDefault();
+            const p = document.createElement("p");
+            p.textContent = `${event.target.nikName.value}로 닉네임을 설정하셨습니다`
+            document.body.appendChild(p);
+
+        })
+
+
+
+    </script>
+</body>
+</html>
