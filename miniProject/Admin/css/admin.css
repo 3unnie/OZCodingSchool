@@ -1,0 +1,157 @@
+/*폰트*/
+*{
+    font-family: "Nanum Gothic Coding", monospace;
+    font-weight: 400;
+    font-style: normal;   
+}
+th{
+    font-size: 13px;
+    font-weight: 600;
+}
+/*제목 부분*/
+.col-3,.col-4, .col-2{
+    line-height: 70px;
+    border-bottom: 1px solid #D6D9DF;
+}
+
+/*제목*/
+#newProduct{
+    display: inline-block;
+    position: relative;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+#soldOut{
+    display: inline-block;
+    position: relative;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/*메뉴효과*/
+#newProduct span,#soldOut span{
+    position: absolute;
+    border-bottom: 3px solid #4A78BC;
+    bottom: 0;
+    left: 0;
+    right: 100%;
+    transition: 0.5s;
+}
+#newProduct:hover span,#soldOut:hover span{
+    right: 0%;
+}
+#newProduct:hover, #soldOut:hover{
+    color: #4A78BC;
+}
+
+#searchBox{
+    margin-top: 20px;
+    border-bottom: 1px solid #D6D9DF;
+}
+
+/*조회*/
+/*select 카테고리 부분*/
+#selectPref{
+    color: #787E8E;
+    font-size: 13px;
+    outline: none;
+    border: 0px;
+}
+
+/*검색창*/
+#searchBar{
+    width: 200px;
+    height: 28px;
+    border: none;
+    border-bottom: 1px solid #D6D9DF;
+    outline: none;
+}
+
+#searchBar::placeholder{
+    font-size: 12px;
+    color: #AAAEB7;
+}
+
+/*조회 버튼*/
+#submitBtn{
+    font-size: 13px;
+    border: 1px solid #4A78BC;
+    color: white;
+    background-color: #4A78BC;
+    border-radius: 5px;
+    width: 50px;
+    height: 30px;
+}
+
+#submitBtn:hover, #resetBtn:hover{
+    border: 1px solid #4A78BC;
+    color: #4A78BC;
+    background-color: white;
+    transition: 0.3s;
+}
+
+#tableBox, #tableBox2{
+    margin-top: 10px;
+}
+
+/*표 내용부분*/
+td{
+    font-size: 15px;
+}
+
+input[type="checkbox"]{
+    accent-color: #4A78BC;
+}
+
+#resetBtn{
+    font-size: 13px;
+    border: 1px solid #4A78BC;
+    color: white;
+    background-color: #4A78BC;
+    border-radius: 5px;
+    width: 80px;
+    height: 30px;
+}
+
+#deleteBtn{
+    font-size: 13px;
+    border: 1px solid #bc4e4a;
+    color: white;
+    background-color: #bc4e4a;
+    border-radius: 5px;
+    width: 80px;
+    height: 30px;
+}
+#deleteBtn:hover{
+    border: 1px solid #bc4e4a;
+    color: #bc4e4a;
+    background-color: white;
+    transition: 0.3s;
+}
+
+/*페이지네이션*/
+.page-item a{
+    border: none;
+    text-decoration: none;
+    font-size: 16px;
+    color: #4A78BC;
+}
+
+.page-item a:hover{
+    font-weight: 600;
+}
+
+ul li:nth-child(2){
+    color:#818794;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#firNum{
+    font-weight: 600;
+}
+
