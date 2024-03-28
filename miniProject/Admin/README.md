@@ -55,6 +55,8 @@ gif로 넣을 예정 입니다.
 │   │   └── admin.js
 │   └── css
 │   │    └── admin.css
+│   └── mp4
+│   │    └── result.mp4
 │   ├── admin.html
 │   └── README.md
 └── README.md
