@@ -45,7 +45,7 @@ admin.html
 - '이전' '다음' 버튼을 누르면 현재 페이지를 확인 할 수 있습니다.
 
 ## 💻실행화면
-gif로 넣을 예정 입니다.
+<img src="https://github.com/3unnie/OZCodingSchool/blob/main/miniProject/Admin/result/admin_result.gif" aglin="center">
 
 ## 🌲프로젝트 구조
 ```
