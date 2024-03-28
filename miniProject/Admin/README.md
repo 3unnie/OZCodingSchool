@@ -27,7 +27,7 @@ git clone https://github.com/3unnie/OZCodingSchool/tree/main/miniProject/Admin
 admin.html
 ```
 
-## 👉프로젝트 내용
+## ✏️프로젝트 내용
 ### 기본 요구 사항
 - [X] 카테고리(셀렉트)를 클릭하면 카테고리 메뉴가 나오게 코드 작성  
 - [X] 입력 버튼 안에 “제품명을 입력해주세요"  
