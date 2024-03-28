@@ -55,8 +55,8 @@ admin.html
 │   │   └── admin.js
 │   └── css
 │   │    └── admin.css
-│   └── mp4
-│   │    └── result.mp4
+│   └── result
+│   │    └── result_admin.gif
 │   ├── admin.html
 │   └── README.md
 └── README.md
