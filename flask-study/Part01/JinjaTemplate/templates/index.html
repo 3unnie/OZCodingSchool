@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>진진자라템플릿</title>
+</head>
+<body>
+    <h1>JINJA TEMPLATE</h1>
+    <hr>
+    <p>안녕 {{ data.name }}</p>
+    
+    {% if data.is_admin %}
+        <p>넌 어드민 권한이 있구나?</p>
+    {% else %}
+        <p>넌 어드민 권한이 없어!</p>
+    {% endif %}
+
+    <ul>
+        {% for item in data.item_list %}
+        <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
